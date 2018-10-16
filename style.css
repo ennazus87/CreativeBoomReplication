@@ -1,0 +1,145 @@
+html,
+body,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+}
+
+.navbar {
+    position: relative;
+    z-index: 1000;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 70px;
+    /* transition: background .2s ease-in-out */
+}
+
+.navbar__content {   
+    height: 70px;
+    border-bottom: 1px #cdcdcd solid;
+}
+
+.navbar__logo-container {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 184px;
+    top: 26px;
+}
+
+.navbar__logo {
+    z-index: 99; 
+    width: 184px;
+    height: 18px;
+    display: inline-block;
+    text-indent: -1000em;
+    opacity: 1;
+    transition: opacity .2s ease-in-out .5s;
+}
+
+.navbar__logo-container--eyes-visible .navbar__logo {
+    opacity: 0;
+    transition: opacity .2s ease-in-out 0s;
+}
+
+.navbar__logo img {
+    display: block;
+}
+
+.navbar__eyes {
+    z-index: -1;
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: -23px;
+    left: 163px;
+    /* left: 113px; */
+    opacity: 0;
+    transition: opacity .2s ease-in-out .5s, left .5s ease-in-out 0s
+}
+
+.navbar__logo-container--eyes-visible .navbar__eyes {
+    left: 57px;
+    opacity: 1;
+    transition: opacity .2s ease-in-out 0s, left .5s ease-in-out .2s
+}
+
+.navbar__search-icon {
+    position: absolute;
+    left: 20px;
+    top: 24px;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.navbar__search-icon span.icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-indent: -1000em;
+    background: transparent url(icons.svg?v=2017) no-repeat -298px -9px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar__nav-icon {
+    position: absolute;
+    right: 20px;
+    top: 24px;
+    overflow: hidden;
+    display: inline-block;
+    width: 24px;
+    height: 20px;
+}
+
+.navbar__nav-icon span {
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background: black;
+    text-indent: -1000em;
+    right: 0;
+}
+
+.navbar__nav-icon span:nth-child(1) {
+    top: 3px;
+}
+.navbar__nav-icon span:nth-child(2) {
+    top: 10px;
+}
+.navbar__nav-icon span:nth-child(3) {
+    top: 17px;
+}
+
+.main {
+    padding: 20px;
+    margin: 70px auto;
+}
+
+.main-content {
+
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
